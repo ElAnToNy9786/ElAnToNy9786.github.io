@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zevallos | Portafolio</title>
+    <!-- URLs de Bootstrap Oficiales Corregidas -->
+     <!-- En el <head> de tu HTML -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link rel="stylesheet" href="https://jsdelivr.net"-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+        <!-- MENÚ DE NAVEGACIÓN ESTILO PRÉMIUM OSCURO -->
+        <!-- MENÚ DE NAVEGACIÓN -->
+    <!-- MENÚ DE NAVEGACIÓN CONFIGURADO PARA ANIMACIONES EN CSS NATIVO -->
+    <!-- MENÚ OPTIMIZADO PARA REPETIR ANIMACIONES MUCHAS VECES -->
+    <nav class="navbar-custom">
+        <div class="container">
+            
+            <!-- LOGO / ICONO -->
+            <a class="navbar-brand" href="#">
+                <img src="img/icon.jfif" alt="Icono" width="38" height="38">
+                <span>Antony Zevallos</span>
+            </a>
+            
+            <!-- ENLACES Y BOTÓN EN FILA HORIZONTAL -->
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link-axl" href="#sobre-mi">Sobre mí</a></li>
+                    <li><a class="nav-link-axl" href="#proyectos">Proyectos</a></li>
+                    
+                    <!-- Alterna entre trigger-contacto y trigger-contacto-2 para poder repetir -->
+                    <li><a class="nav-link-axl" href="#trigger-contacto" onclick="this.href = this.getAttribute('href') === '#trigger-contacto' ? '#trigger-contacto-2' : '#trigger-contacto'">Contacto</a></li>
+                    
+                    <!-- Alterna entre trigger-hablemos y trigger-hablemos-2 para poder repetir -->
+                    <li><a class="btn-hablemos" href="#trigger-hablemos" onclick="this.href = this.getAttribute('href') === '#trigger-hablemos' ? '#trigger-hablemos-2' : '#trigger-hablemos'">Hablemos</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- BANNER DE ILUSTRACIÓN PANORÁMICO DIRECTO -->
+    <div class="hero-banner">
+        <!-- Cargamos tu dibujo directamente desde tu carpeta de imágenes -->
+        <img src="img/banner.jpg" alt="Zefkar Wolf Banner" class="banner-img">
+        
+        <div class="banner-overlay"></div>
+        
+        <div class="banner-container">
+            <span class="banner-badge">Concept Art & Ilustración</span>
+        </div>
+    </div>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container-body">
+        
+        <!-- CAJA DE PRESENTACIÓN PRINCIPAL (HERO BOX) -->
+        <div class="hero-box">
+            <div class="hero-content">
+                <h1 class="hero-name">¡Hola! Mi nombre es Antony Zevallos</h1>
+                <p class="hero-alias">mejor conocido como... <span class="text-orange">Zefkar Wolf</span></p>
+                
+                <p class="hero-description">
+                    Estudiante de la carrera de Desarrollo de Sistemas de Información, artista de dibujo y músico experimental.
+                    Es de mi interes comprender la tecnologia, practicar la programacion y mejorar mis proyectos cada vez mas.
+                </p>
+                <p class="hero-description">
+                    Mi objetivo es crear mejores experiencias digitales como páginas web, videojuegos interactivos o herramientas de ayuda. con el proposito de brindar la mejor experiencia.
+                </p>
+
+                <!-- NUEVA SECCIÓN DE LLAMADA DIRECTA -->
+                <div class="contact-prompt-zone">
+                    <p class="contact-text-prompt"><i class="bi bi-chat-right-dots-fill me-2 text-orange-glow"></i>¿Tienes una idea en mente? <span class="fw-bold text-white">¡Ponte en contacto!</span></p>
+                </div>
+                
+                <div class="hero-buttons-gap">
+                    <a class="btn-body-orange" href="#proyectos">
+                        <i class="bi bi-rocket-takeoff me-2"></i>Ver mis proyectos
+                    </a>
+                    <a class="btn-body-secondary" href="#contacto">
+                        Hablemos! <i class="bi bi-arrow-right small ms-1"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Columna derecha para tu avatar circular -->
+            <div class="hero-avatar-zone">
+                <img src="img/icon.jfif" alt="Zefkar Wolf Avatar" class="hero-avatar">
+            </div>
+        </div>
+
+    </main>
+    <!-- 3. SECCIÓN DE TARJETAS DESLIZANTES SOBRE MÍ -->
+    <section id="sobre-mi" class="section-cards-container">
+        <h2 class="cards-section-title">Sobre Mí</h2>
+        
+        <!-- Contenedor Deslizante (Slider) -->
+        <div class="cards-slider-wrapper">
+            
+            <!-- Tarjeta 1: Habilidades -->
+            <div class="card-item-box anim-izquierda">
+                <div class="card-image-top">
+                    <img src="img/hability.jpg" alt="Habilidades Zefkar Wolf">
+                </div>
+                <div class="card-item-body">
+                    <h3 class="card-item-title">
+                        <i class="bi bi-star-fill card-icon-orange"></i>Habilidades
+                    </h3>
+                    <p class="card-item-text">Hábil para aprender, proactivo, ambicioso y creativo. Capaz de realizar proyectos medianos bien organizados y estructurados asi como explorar mas herramientas</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 2: Intereses -->
+            <div class="card-item-box anim-centro">
+                <div class="card-image-top">
+                    <img src="img/interesing.jfif" alt="Intereses Zefkar Wolf">
+                </div>
+                <div class="card-item-body">
+                    <h3 class="card-item-title">
+                        <i class="bi bi-code-slash card-icon-orange"></i>Intereses
+                    </h3>
+                    <p class="card-item-text">Proceso de crear páginas web para brindar soluciones, así como entender la función de un código, enlaces, servidores, etc.</p>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 3: Objetivos -->
+            <div class="card-item-box anim-derecha">
+                <div class="card-image-top">
+                    <img src="img/purpose.jfif" alt="Objetivos Zefkar Wolf">
+                </div>
+                <div class="card-item-body">
+                    <h3 class="card-item-title">
+                        <i class="bi bi-trophy-fill card-icon-orange"></i>Objetivos
+                    </h3>
+                    <p class="card-item-text">Desarrollar páginas y programas organizados y fáciles de acceder, que puedan ayudar en alguna actividad o fines entretenidos.</p>
+                    <p class="card-item-text text-muted-small">Ser un artista muy reconocido e influyente y poder ayudar a otros por medio de páginas interactivas.</p>
+                    
+                    <div class="card-signature-badge">"Zefkar Wolf"</div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Pequeño indicador visual abajo para avisar que se desliza -->
+        <div class="slider-hint">
+            <span class="hint-text"><i class="bi bi-arrow-left-right me-2"></i>Desliza horizontalmente</span>
+        </div>
+    </section>
+    <!-- 4. SECCIÓN EXCLUSIVA DE PROYECTOS EN MOSAICO -->
+    <section id="proyectos" class="section-proyectos-container">
+        <div class="proyectos-header">
+            <p class="proyectos-subtitle">Mis trabajos destacados</p>
+            <h2 class="proyectos-title">Portafolio Creativo</h2>
+        </div>
+
+        <div class="proyectos-grid">
+            
+            <!-- Proyecto 1: Código / Sistemas (1 Imagen) -->
+            <div class="proyecto-card">
+                <div class="proyecto-img-wrapper">
+                    <img src="img/proyects/pages/example.jfif" alt="Desarrollo de Software">
+                </div>
+                <div class="proyecto-body">
+                    <div class="proyecto-badge-inline">Desarrollo de Software</div>
+                    <h3 class="proyecto-card-title">Sistemas e Interfaces interactivos</h3>
+                    <p class="proyecto-card-text">Diseño y optimización de aplicaciones web, utilidades lógicas y estructuras de bases de datos enfocadas en accesibilidad.</p>
+                    <div class="proyecto-tech-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Sistemas</span>
+                    </div>
+                </div>
+            </div>
+
+                        <!-- Proyecto 2: Arte / Videojuegos (Desplegable con Mosaico de 4) -->
+            <div class="proyecto-card">
+                <details class="proyecto-desplegable">
+                    
+                    <!-- Lo que se ve al inicio -->
+                    <summary class="desplegable-trigger">
+                        <div class="proyecto-mosaic-grid-4">
+                            <div class="mosaic-item"><img src="img/proyects/art/1-4.jfif" alt="Arte 1"></div>
+                            <div class="mosaic-item"><img src="img/proyects/art/2-4.jfif" alt="Arte 2"></div>
+                            <div class="mosaic-item"><img src="img/proyects/art/3-4.jfif" alt="Arte 3"></div>
+                            <div class="mosaic-item"><img src="img/proyects/art/4-4.jpg" alt="Arte 4"></div>
+                        </div>
+                        <div class="proyecto-body">
+                            <div class="proyecto-badge-inline">Arte Digital</div>
+                            <h3 class="proyecto-card-title">Concept Art & Prototipos</h3>
+                            <p class="proyecto-card-text">Modelado de personajes, ilustraciones fluidas y assets visuales listos para implementarse en mecánicas lúdicas de videojuegos.</p>
+                            
+                            <div class="click-to-expand">
+                                <i class="bi bi-play-circle-fill me-2"></i>Ver Cortometraje
+                            </div>
+                        </div>
+                    </summary>
+                    
+                    <!-- Lo que aparece al hacer click (ACTUALIZADO CON TU MINIATURA LOCAL) -->
+                    <div class="desplegable-content">
+                        <div class="video-container-premium">
+                            <!-- Agregado el atributo poster con la ruta exacta a tu miniatura.png -->
+                            <video controls poster="img/proyects/art/corto/miniatura.png">
+                                <source src="img/proyects/art/corto/VIDEO.mp4" type="video/mp4">
+                                Tu navegador no soporta video.
+                            </video>
+                        </div>
+                        <p class="video-caption-text"><i class="bi bi-info-circle me-1"></i> Cortometraje animado completo. Da play para reproducir.</p>
+                    </div>
+
+                </details>
+                
+                <div class="proyecto-body-fixed">
+                    <div class="proyecto-tech-tags">
+                        <span>Ilustración</span>
+                        <span>2D Art</span>
+                        <span>Videojuegos</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Proyecto 3: Música / Audiovisual (Mosaico de 2) -->
+            <div class="proyecto-card">
+                <div class="proyecto-mosaic-grid-2">
+                    <div class="mosaic-item"><img src="img/proyects/multimedia/music.png" alt="Música"></div>
+                    <div class="mosaic-item"><img src="img/proyects/multimedia/video.jpg" alt="Video"></div>
+                </div>
+                <div class="proyecto-body">
+                    <div class="proyecto-badge-inline">Multimedia</div>
+                    <h3 class="proyecto-card-title">Producción & Música Experimental</h3>
+                    <p class="proyecto-card-text">Composición de bandas sonoras atmosféricas, edición integral de clips de video y efectos sonoros interactivos.</p>
+                    <div class="proyecto-tech-tags">
+                        <span>Audio</span>
+                        <span>Edición de Video</span>
+                        <span>VFX</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+        <!-- 5. SECCIÓN DE ENFOQUE Y OPTIMIZACIÓN -->
+    <section id="enfoque" class="section-enfoque-container">
+        <div class="enfoque-header">
+            <p class="enfoque-subtitle">Ingeniería & Solución de problemas</p>
+            <h2 class="enfoque-title">Caso de Estudio: Optimización del Sitio</h2>
+        </div>
+
+        <div class="enfoque-timeline">
+            
+            <!-- Paso 1 -->
+            <div class="enfoque-step">
+                <div class="step-badge">01</div>
+                <div class="step-card">
+                    <h3 class="step-title"><i class="bi bi-shield-slash-fill me-2 text-orange"></i>Diagnóstico de Dependencias</h3>
+                    <p class="step-text">
+                        Detecté y removí enlaces rotos e incompletos de CDNs externas que bloqueaban la carga de Bootstrap 5. Centralicé la lógica de maquetación en código nativo para garantizar que el portafolio funcione de manera independiente y veloz de forma local y en producción.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="enfoque-step">
+                <div class="step-badge">02</div>
+                <div class="step-card">
+                    <h3 class="step-title"><i class="bi bi-grid-3x3-gap-fill me-2 text-orange"></i>Reestructuración de Multimedia</h3>
+                    <p class="step-text">
+                        Diseñé flujos asimétricos con <strong>CSS Grid y Flexbox</strong> para albergar las diferentes disciplinas del portafolio: un render estático para software, un mosaico dinámico de 4 cuadrantes para arte e ilustración, y una división simétrica al 50% para contenido de producción musical.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="enfoque-step">
+                <div class="step-badge">03</div>
+                <div class="step-card">
+                    <h3 class="step-title"><i class="bi bi-cpu-fill me-2 text-orange"></i>Interactividad Avanzada Nativa</h3>
+                    <p class="step-text">
+                        Implementé un sistema de expansión vertical nativo utilizando etiquetas <code>&lt;details&gt;</code> y transiciones de transformación en CSS. Al hacer clic, la tarjeta de arte se estira orgánicamente hacia abajo y despliega un cortometraje en alta definición (MP4) con miniaturas y controles interactivos sin sobrecargar la página con JavaScript de terceros.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="enfoque-step">
+                <div class="step-badge">04</div>
+                <div class="step-card">
+                    <h3 class="step-title"><i class="bi bi-file-earmark-code-fill me-2 text-orange"></i>Debugging de Rutas Relativas</h3>
+                    <p class="step-text">
+                        Resolví conflictos jerárquicos en el árbol de directorios locales. Corregí el direccionamiento de la carpeta de recursos de <code>proyectos</code> a <code>proyects</code> para unificar el enlace entre el HTML raíz y las subcarpetas del servidor.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- ===================================================
+     =================================================== -->
+<section id="contacto" class="container my-5 py-5 text-center section-contacto-bootstrap">
+    
+    <div class="row justify-content-center mb-4">
+        <div class="col-12 col-md-8">
+            <p class="text-uppercase text-warning fw-bold small mb-2 tracking-contacto">Contacto</p>
+            <h2 class="display-6 fw-bold text-white mb-3 title-contacto">¿Conversamos sobre una idea?</h2>
+            <p class="text-secondary text-p-contacto">Si deseas realizar una consulta, revisar mis ilustraciones o compartir una propuesta de sistemas, puedes escribirme a través de cualquiera de mis canales oficiales.</p>
+        </div>
+    </div>
+
+    <!-- Rejilla de Canales Oficiales de Bootstrap (2 Columnas en PC) -->
+    <div class="row g-4 justify-content-center text-start">
+        
+        <!-- Canal 1: Correo Oficial -->
+        <div class="col-12 col-md-6">
+            <div class="card-canal-dsi p-4 rounded-4 h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="wrapper-logo-dsi rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
+                        <img src="img/logos/gmail.jfif" alt="Gmail">
+                    </div>
+                    <h5 class="m-0 ms-3 text-secondary small text-uppercase fw-semibold tracking-sub">Correo Oficial</h5>
+                </div>
+                <p class="text-white fw-medium mb-3 text-break value-contacto">antonyzevallos466@gmail.com</p>
+                <a href="mailto:antonyzevallos466@gmail.com" class="btn btn-outline-warning btn-sm rounded-pill w-100 py-2 fw-semibold">Enviar un correo</a>
+            </div>
+        </div>
+
+        <!-- Canal 2: WhatsApp -->
+        <div class="col-12 col-md-6">
+            <div class="card-canal-dsi p-4 rounded-4 h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="wrapper-logo-dsi rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
+                        <img src="img/logos/wasap.png" alt="WhatsApp">
+                    </div>
+                    <h5 class="m-0 ms-3 text-secondary small text-uppercase fw-semibold tracking-sub">Teléfono & WhatsApp</h5>
+                </div>
+                <p class="text-white fw-medium mb-3 value-contacto">+51 915 915 596</p>
+                <a href="https://wa.me" target="_blank" rel="noopener" class="btn btn-outline-success btn-sm rounded-pill w-100 py-2 fw-semibold">Escribir al WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Canal 3: Arte en X -->
+        <div class="col-12 col-md-6">
+            <div class="card-canal-dsi p-4 rounded-4 h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="wrapper-logo-dsi rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
+                        <img src="img/logos/twitter.jfif" alt="Twitter X">
+                    </div>
+                    <h5 class="m-0 ms-3 text-secondary small text-uppercase fw-semibold tracking-sub">Arte en X</h5>
+                </div>
+                <p class="text-white fw-medium mb-3 value-contacto">@ElAnToNy9786</p>
+                <a href="https://x.com" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm rounded-pill w-100 py-2 fw-semibold">Ver Perfil de X</a>
+            </div>
+        </div>
+
+        <!-- Canal 4: Instagram -->
+        <div class="col-12 col-md-6">
+            <div class="card-canal-dsi p-4 rounded-4 h-100">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="wrapper-logo-dsi rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
+                        <img src="img/logos/instagram.png" alt="Instagram">
+                    </div>
+                    <h5 class="m-0 ms-3 text-secondary small text-uppercase fw-semibold tracking-sub">Galería de Ilustración</h5>
+                </div>
+                <p class="text-white fw-medium mb-3 value-contacto">@zefkarthewolf</p>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-outline-danger btn-sm rounded-pill w-100 py-2 fw-semibold">Ver Galería</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Firma del Autor -->
+    <div class="mt-5 pt-3 signature-box-dsi">
+        <p class="text-white mb-1 fw-semibold">Antony Zevallos Carrasco</p>
+        <span class="text-warning small fst-italic fw-bold">"Zefkar Wolf"</span>
+        <p class="text-secondary small mt-1 mb-0">Sistemas • Arte Digital • Música</p>
+    </div>
+</section>
+
+<!-- Footer clásico e institucional -->
+<footer class="text-center py-4 mt-5 border-top border-secondary footer-dsi-style" style="--bs-border-opacity: .1;">
+    <small class="text-muted">&copy; 2026 Zefkar Wolf. Portafolio personal estructurado bajo componentes Bootstrap 5.</small>
+</footer>
+
+    <!-- Bootstrap 5 JS Oficial -->
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>
