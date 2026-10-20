@@ -300,91 +300,97 @@
     </section>
 
 <!-- ===================================================
+     🎯 SECCIÓN DE CONTACTO: ADAPTADA Y COMPATIBLE DE FORMA AUTÓNOMA
      =================================================== -->
-<section id="contacto" class="container my-5 py-5 text-center section-contacto-bootstrap">
+<section id="contacto" style="max-width: 900px; margin: 80px auto; padding: 0 20px; text-align: center; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; box-sizing: border-box; background-color: #0b0f14;">
     
-    <div class="row justify-content-center mb-4">
-        <div class="col-12 col-md-8">
-            <p class="text-uppercase text-warning fw-bold small mb-2 tracking-contacto">Contacto</p>
-            <h2 class="display-6 fw-bold text-white mb-3 title-contacto">¿Conversamos sobre una idea?</h2>
-            <p class="text-secondary text-p-contacto">Si deseas realizar una consulta, revisar mis ilustraciones o compartir una propuesta de sistemas, puedes escribirme a través de cualquiera de mis canales oficiales.</p>
-        </div>
+    <div style="margin-bottom: 40px; display: flex; flex-direction: column; align-items: center;">
+        <p style="text-transform: uppercase; color: #ff6a00; font-weight: bold; font-size: 0.85rem; margin-bottom: 8px; letter-spacing: 2px;">Contacto</p>
+        <h2 style="font-size: 2rem; font-weight: 700; color: #ffffff; margin: 0 0 15px 0;">¿Conversamos sobre una idea?</h2>
+        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; max-width: 600px; margin: 0;">Si deseas realizar una consulta, revisar mis ilustraciones o compartir una propuesta de sistemas, puedes escribirme a través de cualquiera de mis canales oficiales.</p>
     </div>
 
-    <!-- Rejilla de Canales Oficiales de Bootstrap (2 Columnas en PC) -->
-    <div class="row g-4 justify-content-center text-start">
+    <!-- Contenedor Flex que emula perfectamente la rejilla (row) en 2 columnas -->
+    <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; text-align: left; box-sizing: border-box;">
         
         <!-- Canal 1: Correo Oficial -->
-        <div class="col-12 col-md-6">
-            <div class="card-canal-dsi p-4 rounded-4 h-100">
-                <div class="d-flex align-items-center mb-3">
-                    <div class="wrapper-logo-dsi rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
-                        <img src="img/logos/gmail.jfif" alt="Gmail">
+        <div style="flex: 1 1 calc(50% - 12px); min-width: 280px; box-sizing: border-box;">
+            <div style="padding: 24px; border-radius: 16px; background-color: #131922; border: 1px solid rgba(255, 255, 255, 0.05); height: 100%; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+                <div>
+                    <div style="display: flex; align-items: center; margin-bottom: 16px;">
+                        <div style="width: 40px; height: 40px; border-radius: 8px; background-color: #0b0f14; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
+                            <img src="img/logos/gmail.jfif" alt="Gmail" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <h5 style="margin: 0 0 0 16px; color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Correo Oficial</h5>
                     </div>
-                    <h5 class="m-0 ms-3 text-secondary small text-uppercase fw-semibold tracking-sub">Correo Oficial</h5>
+                    <p style="color: #ffffff; font-weight: 500; margin: 0 0 20px 0; font-size: 0.95rem; word-break: break-all;">antonyzevallos466@gmail.com</p>
                 </div>
-                <p class="text-white fw-medium mb-3 text-break value-contacto">antonyzevallos466@gmail.com</p>
-                <a href="mailto:antonyzevallos466@gmail.com" class="btn btn-outline-warning btn-sm rounded-pill w-100 py-2 fw-semibold">Enviar un correo</a>
+                <a href="mailto:antonyzevallos466@gmail.com" style="display: block; width: 100%; text-align: center; padding: 8px 16px; border: 1px solid #ff6a00; color: #ff6a00; background: transparent; border-radius: 50px; text-decoration: none; font-size: 0.875rem; font-weight: 600; box-sizing: border-box; transition: background 0.3s;">Enviar un correo</a>
             </div>
         </div>
 
         <!-- Canal 2: WhatsApp -->
-        <div class="col-12 col-md-6">
-            <div class="card-canal-dsi p-4 rounded-4 h-100">
-                <div class="d-flex align-items-center mb-3">
-                    <div class="wrapper-logo-dsi rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
-                        <img src="img/logos/wasap.png" alt="WhatsApp">
+        <div style="flex: 1 1 calc(50% - 12px); min-width: 280px; box-sizing: border-box;">
+            <div style="padding: 24px; border-radius: 16px; background-color: #131922; border: 1px solid rgba(255, 255, 255, 0.05); height: 100%; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+                <div>
+                    <div style="display: flex; align-items: center; margin-bottom: 16px;">
+                        <div style="width: 40px; height: 40px; border-radius: 8px; background-color: #0b0f14; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
+                            <img src="img/logos/wasap.png" alt="WhatsApp" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <h5 style="margin: 0 0 0 16px; color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Teléfono & WhatsApp</h5>
                     </div>
-                    <h5 class="m-0 ms-3 text-secondary small text-uppercase fw-semibold tracking-sub">Teléfono & WhatsApp</h5>
+                    <p style="color: #ffffff; font-weight: 500; margin: 0 0 20px 0; font-size: 0.95rem;">+51 915 915 596</p>
                 </div>
-                <p class="text-white fw-medium mb-3 value-contacto">+51 915 915 596</p>
-                <a href="https://wa.me" target="_blank" rel="noopener" class="btn btn-outline-success btn-sm rounded-pill w-100 py-2 fw-semibold">Escribir al WhatsApp</a>
+                <a href="https://wa.me" target="_blank" rel="noopener" style="display: block; width: 100%; text-align: center; padding: 8px 16px; border: 1px solid #198754; color: #198754; background: transparent; border-radius: 50px; text-decoration: none; font-size: 0.875rem; font-weight: 600; box-sizing: border-box;">Escribir al WhatsApp</a>
             </div>
         </div>
 
         <!-- Canal 3: Arte en X -->
-        <div class="col-12 col-md-6">
-            <div class="card-canal-dsi p-4 rounded-4 h-100">
-                <div class="d-flex align-items-center mb-3">
-                    <div class="wrapper-logo-dsi rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
-                        <img src="img/logos/twitter.jfif" alt="Twitter X">
+        <div style="flex: 1 1 calc(50% - 12px); min-width: 280px; box-sizing: border-box;">
+            <div style="padding: 24px; border-radius: 16px; background-color: #131922; border: 1px solid rgba(255, 255, 255, 0.05); height: 100%; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+                <div>
+                    <div style="display: flex; align-items: center; margin-bottom: 16px;">
+                        <div style="width: 40px; height: 40px; border-radius: 8px; background-color: #0b0f14; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
+                            <img src="img/logos/twitter.jfif" alt="Twitter X" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <h5 style="margin: 0 0 0 16px; color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Arte en X</h5>
                     </div>
-                    <h5 class="m-0 ms-3 text-secondary small text-uppercase fw-semibold tracking-sub">Arte en X</h5>
+                    <p style="color: #ffffff; font-weight: 500; margin: 0 0 20px 0; font-size: 0.95rem;">@ElAnToNy9786</p>
                 </div>
-                <p class="text-white fw-medium mb-3 value-contacto">@ElAnToNy9786</p>
-                <a href="https://x.com" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm rounded-pill w-100 py-2 fw-semibold">Ver Perfil de X</a>
+                <a href="https://x.com" target="_blank" rel="noopener" style="display: block; width: 100%; text-align: center; padding: 8px 16px; border: 1px solid #0dcaf0; color: #0dcaf0; background: transparent; border-radius: 50px; text-decoration: none; font-size: 0.875rem; font-weight: 600; box-sizing: border-box;">Ver Perfil de X</a>
             </div>
         </div>
 
         <!-- Canal 4: Instagram -->
-        <div class="col-12 col-md-6">
-            <div class="card-canal-dsi p-4 rounded-4 h-100">
-                <div class="d-flex align-items-center mb-3">
-                    <div class="wrapper-logo-dsi rounded-3 d-flex align-items-center justify-content-center overflow-hidden">
-                        <img src="img/logos/instagram.png" alt="Instagram">
+        <div style="flex: 1 1 calc(50% - 12px); min-width: 280px; box-sizing: border-box;">
+            <div style="padding: 24px; border-radius: 16px; background-color: #131922; border: 1px solid rgba(255, 255, 255, 0.05); height: 100%; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+                <div>
+                    <div style="display: flex; align-items: center; margin-bottom: 16px;">
+                        <div style="width: 40px; height: 40px; border-radius: 8px; background-color: #0b0f14; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
+                            <img src="img/logos/instagram.png" alt="Instagram" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <h5 style="margin: 0 0 0 16px; color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Galería de Ilustración</h5>
                     </div>
-                    <h5 class="m-0 ms-3 text-secondary small text-uppercase fw-semibold tracking-sub">Galería de Ilustración</h5>
+                    <p style="color: #ffffff; font-weight: 500; margin: 0 0 20px 0; font-size: 0.95rem;">@zefkarthewolf</p>
                 </div>
-                <p class="text-white fw-medium mb-3 value-contacto">@zefkarthewolf</p>
-                <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-outline-danger btn-sm rounded-pill w-100 py-2 fw-semibold">Ver Galería</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" style="display: block; width: 100%; text-align: center; padding: 8px 16px; border: 1px solid #dc3545; color: #dc3545; background: transparent; border-radius: 50px; text-decoration: none; font-size: 0.875rem; font-weight: 600; box-sizing: border-box;">Ver Galería</a>
             </div>
         </div>
 
     </div>
 
     <!-- Firma del Autor -->
-    <div class="mt-5 pt-3 signature-box-dsi">
-        <p class="text-white mb-1 fw-semibold">Antony Zevallos Carrasco</p>
-        <span class="text-warning small fst-italic fw-bold">"Zefkar Wolf"</span>
-        <p class="text-secondary small mt-1 mb-0">Sistemas • Arte Digital • Música</p>
+    <div style="margin-top: 48px; padding-top: 16px;">
+        <p style="color: #ffffff; margin: 0 0 4px 0; font-weight: 600; font-size: 1rem;">Antony Zevallos Carrasco</p>
+        <span style="color: #ff6a00; font-size: 0.875rem; font-style: italic; font-weight: bold;">"Zefkar Wolf"</span>
+        <p style="color: #94a3b8; font-size: 0.875rem; margin: 4px 0 0 0;">Sistemas • Arte Digital • Música</p>
     </div>
 </section>
 
-<!-- Footer clásico e institucional -->
-<footer class="text-center py-4 mt-5 border-top border-secondary footer-dsi-style" style="--bs-border-opacity: .1;">
-    <small class="text-muted">&copy; 2026 Zefkar Wolf. Portafolio personal estructurado bajo componentes Bootstrap 5.</small>
+<!-- Footer -->
+<footer style="text-align: center; padding: 24px 0; margin-top: 48px; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.85rem; color: #64748b;">
+    &copy; 2026 Zefkar Wolf. Portafolio personal estructurado bajo componentes Bootstrap 5.
 </footer>
-
     <!-- Bootstrap 5 JS Oficial -->
     <script src="https://jsdelivr.net"></script>
 </body>
